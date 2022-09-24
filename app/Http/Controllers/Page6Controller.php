@@ -18,14 +18,14 @@ class Page6Controller extends Controller
         $input = request()->input($key);
         if ($input && is_array($input)) {
             for ($i = 1; $i < $num + 1; $i++) {
-                $res[$key . '-' . $i] = '0';
+                $res[$key . '_' . $i] = '0';
                 if (in_array($i, $input)) {
-                    $res[$key . '-' . $i] = '1';
+                    $res[$key . '_' . $i] = '1';
                 }
             }
         } else {
             for ($i = 1; $i < $num + 1; $i++) {
-                $res[$key . '-' . $i] = '0';
+                $res[$key . '_' . $i] = '0';
             }
         }
         return $res;

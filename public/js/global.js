@@ -1,11 +1,11 @@
 var cancel;
 setTimeout(function () {
     cancel = function (tag) {
-        $('input[type="text"][name^="'+tag+'-"]').val("");
-        $('input[type="number"][name^="'+tag+'-"]').val("");
-        $('select[name^="'+tag+'-"]').val("");
-        $('input[type="checkbox"][name^="'+tag+'-"]').prop("checked",false)
-        $('input[type="radio"][name^="'+tag+'-"]').prop("checked",false)
+        $('input[type="text"][name^="'+tag+'_"]').val("");
+        $('input[type="number"][name^="'+tag+'_"]').val("");
+        $('select[name^="'+tag+'_"]').val("");
+        $('input[type="checkbox"][name^="'+tag+'_"]').prop("checked",false)
+        $('input[type="radio"][name^="'+tag+'_"]').prop("checked",false)
     }
 }, 1000);
 
@@ -67,7 +67,7 @@ function makeTextRequired(text) {
 // 渲染已填答案
 function renderAnswer() {
     for (const name in data) {
-        if (['公司名稱', '填表人', '密碼', '帳號', '樣本編號', '部門', '電話'].indexOf(name) >= 0) {
+        if (['公司名稱', '填表人', '密碼', '帳號', '樣本編號', '部門', '電話', '職稱', '傳真', 'email'].indexOf(name) >= 0) {
             let value = data[name];
             if (value != null) {
                 if (name == '填表人') {
@@ -76,6 +76,12 @@ function renderAnswer() {
                     $('input[name="depart"][type="text"]').val(value);
                 } else if (name == '電話') {
                     $('input[name="phone"][type="number"]').val(value);
+                } else if (name == '職稱') {
+                    $('input[name="job"][type="text"]').val(value);
+                } else if (name == '傳真') {
+                    $('input[name="tax"][type="number"]').val(value);
+                } else if (name == 'email') {
+                    $('input[name="email"][type="email"]').val(value);
                 }
             }
         } else {
