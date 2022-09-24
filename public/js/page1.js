@@ -1,8 +1,22 @@
 $(function(){
     $('input[name="A_1"]').on('change',()=>{
-      cancel('A_1')
+        cancel('A_1')
     })
-
+    $('input[name="A_3"]').on('change',()=>{
+        cancel('A_3')
+    })
+    $('input[name="A_6"]').on('change',()=>{
+        cancel('A_6')
+    })
+    $('input[name="A_8"]').on('change',()=>{
+        cancel('A_8')
+    })
+    $('input[name="A_9"]').on('change',()=>{
+        cancel('A_9')
+    })
+    $('input[name="A_10"]').on('change',()=>{
+        cancel('A_10')
+    })
   })
 
   var app = new Vue({
@@ -15,6 +29,24 @@ $(function(){
       A_2_1_2:[],
       A_2_2:[],
       A_2_3:[],
+      A_3:'',
+      A_3_1:[],
+      A_3_2:'',
+      A_3_4:'',
+      A_3_3:[],
+      A_3_5:'',
+      A_4:'',
+      A_4_1:[],
+      A_4_2:'',
+      A_4_3:'',
+      A_4_4:'',
+      A_6:'',
+      A_7:'',
+      A_8:'',
+      A_8_1:[],
+      A_9:'',
+      A_9_1:[],
+      A_10:'',
       watch_flag:true
     },
     methods:{
@@ -53,7 +85,24 @@ $(function(){
       this.updateData();
     },
     watch:{
-
+      A_4(value) {
+        if (value == 1) {
+            $('input[name="A_4_1[]"]').prop('checked',false)
+            this.A_4_1=[];
+            this.A_4_2='';
+            this.A_4_3='';
+        }
+      },
+      A_8(value) {
+        if(value == 2) {
+            $('input[name="A_8_3"]').prop('disabled',true)
+        }
+      },
+      A_9(value) {
+        if(value == 1) {
+            $('input[name="A_9_2"]').prop('disabled',true)
+        }
+      }
 
     }
   })

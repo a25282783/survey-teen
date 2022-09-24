@@ -76,6 +76,96 @@ class Page2Controller extends Controller
             "A_2_3_1" => [
                 'answer' => data_get($input, "A_2_3_1", ''),
             ],
+            "A_3" => [
+                'answer' => data_get($input, "A_3", ''),
+            ],
+            "A_3_1" => [
+                'answer' => $this->answerArray("A_3_1", 4),
+            ],
+            "A_3_2" => [
+                'answer' =>  data_get($input, "A_3_2", ''),
+            ],
+            "A_3_4" => [
+                'answer' => data_get($input, "A_3_4", ''),
+            ],
+            "A_3_3" => [
+                'answer' => $this->answerArray("A_3_3", 9),
+            ],
+            "A_3_5" => [
+                'answer' => data_get($input, "A_3_5", ''),
+            ],
+            "A_4" => [
+                'answer' => data_get($input, "A_4", ''),
+            ],
+            "A_4_1" => [
+                'answer' => $this->answerArray("A_4_1", 16),
+            ],
+            "A_4_2" => [
+                'answer' => data_get($input, "A_4_2", ''),
+            ],
+            "A_4_3" => [
+                'answer' => data_get($input, "A_4_3", ''),
+            ],
+            "A_4_4" => [
+                'answer' => data_get($input, "A_4_4", ''),
+            ],
+            "A_5" => [
+                'answer' => data_get($input, "A_5", ''),
+            ],
+            "A_6" => [
+                'answer' => data_get($input, "A_6", ''),
+            ],
+            "A_6_1" => [
+                'answer' => data_get($input, "A_6_1", ''),
+            ],
+            "A_6_2" => [
+                'answer' => data_get($input, "A_6_2", ''),
+            ],
+            "A_6_3" => [
+                'answer' => data_get($input, "A_6_3", ''),
+            ],
+            "A_7" => [
+                'answer' => data_get($input, "A_7", ''),
+            ],
+            "A_7_1" => [
+                'answer' => data_get($input, "A_7_1", ''),
+            ],
+            "A_7_2" => [
+                'answer' => data_get($input, "A_7_2", ''),
+            ],
+            "A_8" => [
+                'answer' => data_get($input, "A_8", ''),
+            ],
+            "A_8_1" => [
+                'answer' => $this->answerArray("A_8_1", 8),
+            ],
+            "A_8_2" => [
+                'answer' => data_get($input, "A_8_2", ''),
+            ],
+            "A_8_3" => [
+                'answer' => data_get($input, "A_8_3", ''),
+            ],
+            "A_8_4" => [
+                'answer' => data_get($input, "A_8_4", ''),
+            ],
+            "A_9" => [
+                'answer' => data_get($input, "A_9", ''),
+            ],
+            "A_9_1" => [
+                'answer' => $this->answerArray("A_9_1", 11),
+            ],
+            "A_9_2" => [
+                'answer' => data_get($input, "A_9_2", ''),
+            ],
+            "A_10" => [
+                'answer' => data_get($input, "A_10", ''),
+            ],
+            "A_10_1" => [
+                'answer' => data_get($input, "A_10_1", ''),
+            ],
+            "A_11" => [
+                'answer' => data_get($input, "A_11", ''),
+            ],
         ];
 
         Result::updateOrCreate(
