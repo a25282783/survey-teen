@@ -1,7 +1,7 @@
 <!-- 頁碼+按鈕 -->
 <section class="form-footer">
   <p class="form-page">
-      第 <span id="current">{{ $current }}</span> 頁，共 6 頁
+      第 <span id="current">{{ $current }}</span> 頁，共 4 頁
   </p>
   <div class="form-btn">
       @if (request()->path() != 'page1')

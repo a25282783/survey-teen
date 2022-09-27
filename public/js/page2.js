@@ -1,13 +1,32 @@
 $(function () {
-    // $('input[name="B-1"]').on('change',()=>{
-    //     cancel('B-1')
-    // })
+    $('input[name="B_1"]').on('change',()=>{
+        cancel('B_1')
+    })
+    $('input[name="B_3"]').on('change',()=>{
+      cancel('B_3')
+    })
+    $('input[name="B_5"]').on('change',()=>{
+      cancel('B_5')
+    })
+    $('input[name="B_7"]').on('change',()=>{
+      cancel('B_7')
+    })
 })
 
 var app = new Vue({
   el: '#app',
   data: {
-    // A_1:'',
+    B_1:'',
+    B_1_1:[],
+    B_2:[],
+    B_3:'',
+    B_3_1:[],
+    B_5:'',
+    B_5_2:[],
+    B_6:[],
+    B_7:'',
+    B_9:'',
+    B_11:[],
     watch_flag:true
   },
   methods:{
@@ -46,14 +65,6 @@ var app = new Vue({
     this.updateData();
   },
   watch:{
-    // A_4(value) {
-    //   if (value == 1) {
-    //       $('input[name="A_4_1[]"]').prop('checked',false)
-    //       this.A_4_1=[];
-    //       this.A_4_2='';
-    //       this.A_4_3='';
-    //   }
-    // },
 
   }
 })
