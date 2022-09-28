@@ -28,10 +28,7 @@ class ContinueWrite
             return response()->view('finish');
         }
         //判斷上次做到哪
-        if ($userResult->page5 && !$userResult->page6) {
-            $request->session()->put('maxPage', '5');
-            return redirect('/page6');
-        } elseif ($userResult->page4 && !$userResult->page5) {
+        if ($userResult->page4 && !$userResult->page5) {
             $request->session()->put('maxPage', '4');
             return redirect('/page5');
         } elseif ($userResult->page3 && !$userResult->page4) {

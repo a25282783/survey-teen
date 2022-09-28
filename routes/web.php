@@ -45,10 +45,6 @@ Route::middleware(['auth', 'checkPage'])->group(function () {
         $data = @(auth()->user()->results->page5);
         return view('page5', compact('data'));
     });
-    Route::get('/page6', function () {
-        $data = @(auth()->user()->results->page6);
-        return view('page6', compact('data'));
-    });
     Route::get('/finish', function () {
         return view('finish');
     });

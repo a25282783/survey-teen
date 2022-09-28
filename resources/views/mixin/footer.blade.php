@@ -1,5 +1,5 @@
 <footer class="footer-copyright">
-  Copyright © 2021 勞動部
+  Copyright © 2022 勞動部
 </footer>
 <!-- JS -->
 <script>

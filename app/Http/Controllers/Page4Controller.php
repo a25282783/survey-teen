@@ -35,226 +35,66 @@ class Page4Controller extends Controller
     {
         $input = $request->except(['_token']);
         $data = [
-            "C-1" => [
-                'answer' => data_get($input, "C-1", ''),
+            "C_1" => [
+                'answer' => data_get($input, "C_1", ''),
             ],
-            "C-1-A" => [
-                'answer' => data_get($input, "C-1-A", ''),
+            "C_1_1" => [
+                'answer' => $this->answerArray("C_1_1", 14),
             ],
-            "C-1-B" => [
-                'answer' => data_get($input, "C-1-B", ''),
+            "C_1_2" => [
+                'answer' => data_get($input, "C_1_2", ''),
             ],
-            "C-1-C" => [
-                'answer' => data_get($input, "C-1-C", ''),
+            "C_2" => [
+                'answer' => data_get($input, "C_2", ''),
             ],
-            "C-1-D" => [
-                'answer' => data_get($input, "C-1-D", ''),
+            "C_2_1" => [
+                'answer' => $this->answerArray("C_2_1", 8),
             ],
-            "C-1-E" => [
-                'answer' => data_get($input, "C-1-E", ''),
+            "C_2_2" => [
+                'answer' => data_get($input, "C_2_2", ''),
             ],
-            "C-1-F" => [
-                'answer' => data_get($input, "C-1-F", ''),
+            "C_3" => [
+                'answer' => data_get($input, "C_3", ''),
             ],
-            "C-1-G" => [
-                'answer' => $this->answerArray("C-1-G", 3),
+            "C_3_1" => [
+                'answer' => $this->answerArray("C_3_1", 6),
             ],
-            "C-1-H" => [
-                'answer' => data_get($input, "C-1-H", ''),
+            "C_3_2" => [
+                'answer' => data_get($input, "C_3_2", ''),
             ],
-            "C-1-I" => [
-                'answer' => data_get($input, "C-1-I", ''),
+            "C_3_3" => [
+                'answer' => data_get($input, "C_3_3", ''),
             ],
-            "C-2" => [
-                'answer' => data_get($input, "C-2", ''),
+            "C_3_4" => [
+                'answer' => data_get($input, "C_3_4", ''),
             ],
-            "C-2-A" => [
-                'answer' => $this->answerArray("C-2-A", 4),
+            "C_3_5" => [
+                'answer' => data_get($input, "C_3_5", ''),
             ],
-            "C-2-B" => [
-                'answer' => data_get($input, "C-2-B", ''),
+            "C_3_6" => [
+                'answer' => data_get($input, "C_3_6", ''),
             ],
-            "C-3" => [
-                'answer' => data_get($input, "C-3", ''),
+            "C_3_7" => [
+                'answer' => data_get($input, "C_3_7", ''),
             ],
-            "C-3-A" => [
-                'answer' => data_get($input, "C-3-A", ''),
+            "C_3_8" => [
+                'answer' => data_get($input, "C_3_8", ''),
             ],
-            "C-3-B" => [
-                'answer' => data_get($input, "C-3-B", ''),
+            "C_4" => [
+                'answer' => data_get($input, "C_4", ''),
             ],
-            'C-3-C' => [
-                'answer' => $this->answerArray('C-3-C', 3),
+            "C_4_1" => [
+                'answer' => $this->answerArray("C_4_1", 9),
             ],
-            "C-3-D" => [
-                'answer' => data_get($input, "C-3-D", ''),
+            "C_4_2" => [
+                'answer' => data_get($input, "C_4_2", ''),
             ],
-            "C-3-E" => [
-                'answer' => data_get($input, "C-3-E", ''),
+            "C_4_3" => [
+                'answer' =>  data_get($input, "C_4_3", ''),
             ],
-            "C-4_1" => [
-                'answer' => data_get($input, "C-4_1", ''),
+            "C_4_4" => [
+                'answer' => data_get($input, "C_4_4", ''),
             ],
-            "C-4_1-A" => [
-                'answer' => data_get($input, "C-4_1-A", ''),
-            ],
-            "C-4_1-B" => [
-                'answer' => data_get($input, "C-4_1-B", ''),
-            ],
-            "C-4_1-C" => [
-                'answer' => data_get($input, "C-4_1-C", ''),
-            ],
-            "C-4_1-D" => [
-                'answer' => data_get($input, "C-4_1-D", ''),
-            ],
-            "C-4_1-E" => [
-                'answer' => data_get($input, "C-4_1-E", ''),
-            ],
-            "C-4_1-F" => [
-                'answer' => data_get($input, "C-4_1-F", ''),
-            ],
-            "C-4_1-G" => [
-                'answer' => data_get($input, "C-4_1-G", ''),
-            ],
-            "C-4_1-H" => [
-                'answer' => $this->answerArray("C-4_1-H", 4),
-            ],
-            "C-4_1-I" => [
-                'answer' => data_get($input, "C-4_1-I", ''),
-            ],
-            "C-4_2" => [
-                'answer' => data_get($input, "C-4_2", ''),
-            ],
-            "C-4_2-A" => [
-                'answer' => data_get($input, "C-4_2-A", ''),
-            ],
-            "C-4_2-B" => [
-                'answer' => data_get($input, "C-4_2-B", ''),
-            ],
-            "C-4_2-C" => [
-                'answer' => $this->answerArray("C-4_2-C", 4),
-            ],
-            "C-4_2-D" => [
-                'answer' => data_get($input, "C-4_2-D", ''),
-            ],
-            "C-4_2-E" => [
-                'answer' => data_get($input, "C-4_2-E", ''),
-            ],
-            "C-5" => [
-                'answer' => data_get($input, "C-5", ''),
-            ],
-            "C-5-A" => [
-                'answer' => data_get($input, "C-5-A", ''),
-            ],
-            "C-5-B" => [
-                'answer' => data_get($input, "C-5-B", ''),
-            ],
-            "C-5-C" => [
-                'answer' => $this->answerArray("C-5-C", 3),
-            ],
-            "C-5-D" => [
-                'answer' => data_get($input, "C-5-D", ''),
-            ],
-            "C-5-E" => [
-                'answer' => data_get($input, "C-5-E", ''),
-            ],
-            "C-6" => [
-                'answer' => data_get($input, "C-6", ''),
-            ],
-            "C-6-A" => [
-                'answer' => data_get($input, "C-6-A", ''),
-            ],
-            "C-6-B" => [
-                'answer' => data_get($input, "C-6-B", ''),
-            ],
-            "C-6-C" => [
-                'answer' => data_get($input, "C-6-C", ''),
-            ],
-            "C-6-D" => [
-                'answer' => $this->answerArray("C-6-D", 6),
-            ],
-            "C-6-E" => [
-                'answer' => data_get($input, "C-6-E", ''),
-            ],
-            "C-6-F" => [
-                'answer' => data_get($input, "C-6-F", ''),
-            ],
-            "C-6-G" => [
-                'answer' => data_get($input, "C-6-G", ''),
-            ],
-            "C-6-H" => [
-                'answer' => $this->answerArray("C-6-H", 5),
-            ],
-            "C-6-I" => [
-                'answer' => data_get($input, "C-6-I", ''),
-            ],
-            "C-6-J" => [
-                'answer' => data_get($input, "C-6-J", ''),
-            ],
-            "C-6-K" => [
-                'answer' => data_get($input, "C-6-K", ''),
-            ],
-            "C-6-L" => [
-                'answer' => data_get($input, "C-6-L", ''),
-            ],
-            "C-6-M" => [
-                'answer' => data_get($input, "C-6-M", ''),
-            ],
-            "C-7" => [
-                'answer' => data_get($input, "C-7", ''),
-            ],
-            "C-7-A" => [
-                'answer' => data_get($input, "C-7-A", ''),
-            ],
-            "C-7-B" => [
-                'answer' => data_get($input, "C-7-B", ''),
-            ],
-            "C-7-C" => [
-                'answer' => data_get($input, "C-7-C", ''),
-            ],
-            "C-7-D" => [
-                'answer' => data_get($input, "C-7-D", ''),
-            ],
-            "C-7-E" => [
-                'answer' => data_get($input, "C-7-E", ''),
-            ],
-            "C-7-F" => [
-                'answer' => data_get($input, "C-7-F", ''),
-            ],
-            "C-7-G" => [
-                'answer' => data_get($input, "C-7-G", ''),
-            ],
-            "C-7-H" => [
-                'answer' => $this->answerArray("C-7-H", 4),
-            ],
-            "C-7-I" => [
-                'answer' => data_get($input, "C-7-I", ''),
-            ],
-            "C-8" => [
-                'answer' => data_get($input, "C-8", ''),
-            ],
-            "C-8-A" => [
-                'answer' => data_get($input, "C-8-A", ''),
-            ],
-            "C-8-B" => [
-                'answer' => data_get($input, "C-8-B", ''),
-            ],
-            "C-8-C" => [
-                'answer' => data_get($input, "C-8-C", ''),
-            ],
-            "C-8-D" => [
-                'answer' => data_get($input, "C-8-D", ''),
-            ],
-            "C-8-E" => [
-                'answer' => data_get($input, "C-8-E", ''),
-            ],
-            "C-8-F" => [
-                'answer' => data_get($input, "C-8-F", ''),
-            ],
-            "C-8-G" => [
-                'answer' => data_get($input, "C-8-G", ''),
-            ],
-
         ];
         Result::updateOrCreate(
             ['user_id' => auth()->id()],
