@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -52,4 +53,20 @@ Route::middleware(['auth', 'checkPage'])->group(function () {
 
 Route::get('/logout', function () {
     auth()->logout();
+});
+
+// clear
+Route::get('/artisan-clear', function () {
+    try {
+        Artisan::call('cache:clear');
+        Artisan::call('config:clear');
+        Artisan::call('event:clear');
+        Artisan::call('optimize:clear');
+        Artisan::call('view:clear');
+
+        dd('success!');
+    } catch (\Throwable $th) {
+        dd('fail!', $th->getMessage());
+    }
+
 });
