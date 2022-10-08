@@ -16,9 +16,9 @@ class CheckPage
     public function handle($request, Closure $next)
     {
         //本機測試用
-        if (request()->getHost() == 'localhost') {
-            return $next($request);
-        }
+        // if (request()->getHost() == 'localhost') {
+        //     return $next($request);
+        // }
         $userResult = auth()->user()->results;
         //作答完畢顯示感謝頁
         if (!$userResult) {

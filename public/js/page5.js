@@ -5,6 +5,7 @@ $(function(){
   })
   $('input[name="E_7"]').on('change', function(){
     cancel('E_7')
+    app.E_7_1=[]
   })
 })
   var app = new Vue({

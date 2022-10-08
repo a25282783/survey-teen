@@ -272,7 +272,7 @@
                                 :disabled="C_3!=1"
                                 v-model="C_3_1" ref="C_3_1">
                                 <label class="form-check-label" for="C_3_1_v1">
-                                    (1)技術士證照<input min="0" type="number" class="input-inline"
+                                    (1)技術士證照<input min="1" type="number" class="input-inline"
                                     name="C_3_2"
                                     :required="C_3_1.indexOf('1')!==-1"
                                     :disabled="C_3_1.indexOf('1')==-1"
@@ -285,7 +285,7 @@
                                 :disabled="C_3!=1"
                                 v-model="C_3_1" ref="C_3_1">
                                 <label class="form-check-label" for="C_3_1_v2">
-                                    (2)專門職業及技術人員考試及格證書<input min="0" type="number" class="input-inline"
+                                    (2)專門職業及技術人員考試及格證書<input min="1" type="number" class="input-inline"
                                     name="C_3_3"
                                     :required="C_3_1.indexOf('2')!==-1"
                                     :disabled="C_3_1.indexOf('2')==-1"
@@ -298,7 +298,7 @@
                                 :disabled="C_3!=1"
                                 v-model="C_3_1" ref="C_3_1">
                                 <label class="form-check-label" for="C_3_1_v3">
-                                    (3)金融從業人員證照<input min="0" type="number" class="input-inline"
+                                    (3)金融從業人員證照<input min="1" type="number" class="input-inline"
                                     name="C_3_4"
                                     :required="C_3_1.indexOf('3')!==-1"
                                     :disabled="C_3_1.indexOf('3')==-1"
@@ -311,7 +311,7 @@
                                 :disabled="C_3!=1"
                                 v-model="C_3_1" ref="C_3_1">
                                 <label class="form-check-label" for="C_3_1_v4">
-                                    (4)電腦相關證照<input min="0" type="number" class="input-inline"
+                                    (4)電腦相關證照<input min="1" type="number" class="input-inline"
                                     name="C_3_5"
                                     :required="C_3_1.indexOf('4')!==-1"
                                     :disabled="C_3_1.indexOf('4')==-1"
@@ -324,7 +324,7 @@
                                 :disabled="C_3!=1"
                                 v-model="C_3_1" ref="C_3_1">
                                 <label class="form-check-label" for="C_3_1_v5">
-                                    (5)語文認證<input min="0" type="number" class="input-inline"
+                                    (5)語文認證<input min="1" type="number" class="input-inline"
                                     name="C_3_6"
                                     :required="C_3_1.indexOf('5')!==-1"
                                     :disabled="C_3_1.indexOf('5')==-1"
@@ -342,7 +342,7 @@
                                     :required="C_3_1.indexOf('6')!==-1"
                                     :disabled="C_3_1.indexOf('6')==-1"
                                     >
-                                    )<input min="0" type="number" class="input-inline"
+                                    )<input min="1" type="number" class="input-inline"
                                     name="C_3_8"
                                     :required="C_3_1.indexOf('6')!==-1"
                                     :disabled="C_3_1.indexOf('6')==-1"

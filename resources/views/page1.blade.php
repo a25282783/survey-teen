@@ -187,7 +187,9 @@
                     <label class="form-check-label" for="A_2_1_v4">
                         (4)其他(請說明)：
                     </label>
-                    <input name="A_2_1_3" type="text" class="form-control" placeholder="請說明">
+                    <input name="A_2_1_3" type="text" class="form-control" 
+                    :disabled="A_2_1.indexOf('4') == -1"
+                    placeholder="請說明">
                   </div>
                 </div>
               <div class="form-check">
@@ -224,7 +226,9 @@
                     <label class="form-check-label" for="A_2_2_v3">
                         (3)其他(請說明)
                     </label>
-                    <input name="A_2_2_1" type="text" class="form-control" placeholder="請說明">
+                    <input name="A_2_2_1" type="text" class="form-control"
+                    :disabled="A_2_2.indexOf('3') == -1"
+                    placeholder="請說明">
                   </div>
                 </div>
               <div class="form-check">
@@ -306,7 +310,9 @@
                     <label class="form-check-label" for="A_2_3_v8">
                         (8)其他(請說明)
                     </label>
-                    <input name="A_2_3_1" type="text" class="form-control" placeholder="請說明">
+                    <input name="A_2_3_1" type="text" class="form-control"
+                    :disabled="A_2_3.indexOf('8') == -1"
+                    placeholder="請說明">
                   </div>
                 </div>
             </div>
@@ -362,7 +368,9 @@
                           <label class="form-check-label" for="A_3_1_v4">
                               ④其他(請說明)
                           </label>
-                          <input name="A_3_4" type="text" class="form-control" placeholder="請說明">
+                          <input name="A_3_4" type="text" class="form-control"
+                          :disabled="A_3_1.indexOf('4') == -1"
+                          placeholder="請說明">
                         </div>
                       </div>
                      <!-- A_3_2 -->
@@ -476,7 +484,9 @@
                           <label class="form-check-label" for="A_3_3_v9">
                             (9)其他(請說明)
                           </label>
-                          <input name="A_3_5" type="text" class="form-control" placeholder="請說明">
+                          <input name="A_3_5" type="text" class="form-control"
+                          :disabled="A_3_3.indexOf('9') == -1"
+                          placeholder="請說明">
                         </div>
                       </div>
               </div>
@@ -646,7 +656,9 @@
                       <label class="form-check-label" for="A_4_1_v16">
                         (16)其他(請說明)
                       </label>
-                      <input name="A_4_2" type="text" class="form-control" placeholder="請說明">
+                      <input name="A_4_2" type="text" class="form-control"
+                      :disabled="A_4_1.indexOf('16') == -1"
+                      placeholder="請說明">
                     </div>
                     <div class="form-check">
                       其中最主要的原因為                      (請填號碼)

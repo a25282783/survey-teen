@@ -1,12 +1,15 @@
 $(function () {
     $('input[name="B_1"]').on('change',()=>{
         cancel('B_1')
+        app.B_1_1=[]
     })
     $('input[name="B_3"]').on('change',()=>{
       cancel('B_3')
+      app.B_3_1=[]
     })
     $('input[name="B_5"]').on('change',()=>{
       cancel('B_5')
+      app.B_5_2=[]
     })
     $('input[name="B_7"]').on('change',()=>{
       cancel('B_7')

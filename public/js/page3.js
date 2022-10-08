@@ -1,9 +1,11 @@
 $(function(){
     $('input[name="C_1"]').on('change',()=>{
       cancel('C_1')
+      app.C_1_1=[]
     })
     $('input[name="C_2"]').on('change',()=>{
       cancel('C_2')
+      app.C_2_1=[]
     })
     $('input[name="C_3"]').on('change',()=>{
       cancel('C_3')
@@ -12,6 +14,7 @@ $(function(){
     })
     $('input[name="C_4"]').on('change',()=>{
       cancel('C_4')
+      app.C_4_1=[]
     })
   })
 
@@ -65,7 +68,27 @@ $(function(){
       this.updateData();
     },
     watch:{
-
+      C_3_1(value){
+        if (value.indexOf('1') == -1){
+          $('input[name=C_3_2]').val('')
+        }
+        if (value.indexOf('2') == -1){
+          $('input[name=C_3_3]').val('')
+        }
+        if (value.indexOf('3') == -1){
+          $('input[name=C_3_4]').val('')
+        }
+        if (value.indexOf('4') == -1){
+          $('input[name=C_3_5]').val('')
+        }
+        if (value.indexOf('5') == -1){
+          $('input[name=C_3_6]').val('')
+        }
+        if (value.indexOf('6') == -1){
+          $('input[name=C_3_7]').val('')
+          $('input[name=C_3_8]').val('')
+        }
+      }
     }
   })
 
