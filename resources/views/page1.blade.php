@@ -2,11 +2,6 @@
 @section('content')
 @include('mixin.header')
 <main class="container" id="app">
-  {{-- <div class="info-box">
-    <p>敬致 受查者</p>
-    <p>為了解勞工生活及工作實況與需求，供為本部規劃勞動政策之衝要依據，特委託智略市場研究股份有限公司辦理「勞工生活及就業狀況調查」，敬請撥冗填答。</p>
-    <p class="text-danger">若對於問卷內容有任何疑問，請洽智略市場研究股份有限公司(02)5553-2685分機103宋小姐或本部統計處(02)8995-6866分機2906/2905/2904。</p>
-  </div> --}}
   <form id="form" action="{{ route('page2') }}" method="POST" onsubmit="return checkForm()">
     @csrf
     <div class="basic-info-form">
@@ -26,21 +21,21 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="name" class="col-md-2 col-form-label"><span class="text-danger">*</span>填表人：</label>
+        <label for="name" class="col-md-2 col-form-label">填表人：</label>
         <div class="col-md-5">
-          <input name="name" type="text" class="form-control" id="name" required>
+          <input name="name" type="text" class="form-control" id="name" value="{{ auth()->user()->survey_name }}" readonly="readonly">
         </div>
       </div>
       <div class="form-group row">
-        <label for="depart" class="col-md-2 col-form-label"><span class="text-danger">*</span>部門：</label>
+        <label for="depart" class="col-md-2 col-form-label">部門：</label>
         <div class="col-md-5">
-          <input name="depart" type="text" class="form-control" id="depart" required>
+          <input name="depart" type="text" class="form-control" id="depart">
         </div>
       </div>
       <div class="form-group row">
-        <label for="job" class="col-md-2 col-form-label"><span class="text-danger">*</span>職稱：</label>
+        <label for="job" class="col-md-2 col-form-label">職稱：</label>
         <div class="col-md-5">
-          <input name="job" type="text" class="form-control" id="job" required>
+          <input name="job" type="text" class="form-control" id="job">
         </div>
       </div>
       <div class="form-group row">
@@ -52,13 +47,13 @@
       <div class="form-group row">
         <label for="phone" class="col-md-2 col-form-label"><span class="text-danger">*</span>聯絡電話：</label>
         <div class="col-md-5">
-          <input name="phone" type="number" class="form-control" id="phone" required>
+          <input name="phone" type="text" class="form-control" id="phone" required>
         </div>
       </div>
       <div class="form-group row">
         <label for="tax" class="col-md-2 col-form-label">傳真電話：</label>
         <div class="col-md-5">
-          <input name="tax" type="number" class="form-control" id="tax">
+          <input name="tax" type="text" class="form-control" id="tax">
         </div>
       </div>
     </div>
@@ -666,6 +661,7 @@
                       :required="A_4==2"
                       :disabled="A_4!=2"
                       v-model="A_4_3" ref="A_4_3"
+                      id="A_4_3"
                       style="width: 100px;">
                     </div>
                   </div>

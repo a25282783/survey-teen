@@ -75,11 +75,11 @@ function renderAnswer() {
                 } else if (name == '部門') {
                     $('input[name="depart"][type="text"]').val(value);
                 } else if (name == '電話') {
-                    $('input[name="phone"][type="number"]').val(value);
+                    $('input[name="phone"][type="text"]').val(value);
                 } else if (name == '職稱') {
                     $('input[name="job"][type="text"]').val(value);
                 } else if (name == '傳真') {
-                    $('input[name="tax"][type="number"]').val(value);
+                    $('input[name="tax"][type="text"]').val(value);
                 } else if (name == 'email') {
                     $('input[name="email"][type="email"]').val(value);
                 }

@@ -39,7 +39,7 @@
             <h3>三、請問您的教育程度<span class="text-danger">(已取得畢業證書之最高學歷)</span>？</h3>
             <div class="form-group">
                 <div class="form-check">
-                    您是民國<input min="0" max="101" type="number" class="input-inline" name="E_3" required >年畢業
+                    您是民國<input min="81" max="111" type="number" class="input-inline" name="E_3" required >年畢業
                 </div>
             <div class="qa-box">
                 <div class="form-check">

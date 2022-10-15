@@ -11,6 +11,18 @@ $(function(){
       cancel('D_3')
       app.D_3_1=''
     })
+    $('input[name="D_5[]"]').on('change', ()=>{
+      if($('#D_5_v13').is(":checked")){
+        for (let index = 1; index < 13; index++) {
+          $('#D_5_v' + index).prop('disabled', true)
+          $('#D_5_v' + index).prop('checked', false)
+        }
+      } else {
+        for (let index = 1; index < 13; index++) {
+          $('#D_5_v' + index).prop('disabled', false)
+        }
+      }
+    })
   })
   var app = new Vue({
     el: '#app',

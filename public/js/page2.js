@@ -14,6 +14,18 @@ $(function () {
     $('input[name="B_7"]').on('change',()=>{
       cancel('B_7')
     })
+    $('input[name="B_6[]"]').on('change', ()=>{
+      if($('#B_6_v7').is(":checked")){
+        for (let index = 1; index < 7; index++) {
+          $('#B_6_v' + index).prop('disabled', true)
+          $('#B_6_v' + index).prop('checked', false)
+        }
+      } else {
+        for (let index = 1; index < 7; index++) {
+          $('#B_6_v' + index).prop('disabled', false)
+        }
+      }
+    })
 })
 
 var app = new Vue({
@@ -29,7 +41,7 @@ var app = new Vue({
     B_6:[],
     B_7:'',
     B_9:'',
-    B_11:[],
+    B_11:'',
     watch_flag:true
   },
   methods:{

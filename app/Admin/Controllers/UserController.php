@@ -29,6 +29,7 @@ class UserController extends AdminController
         $grid->paginate(30);
         $grid->column('name', '帳號');
         $grid->column('password_uncrypt', '密碼');
+        $grid->column('survey_name', '填表人');
         $grid->column('depart', '單位');
         $grid->column('serial', '樣本編號');
 
@@ -69,6 +70,7 @@ class UserController extends AdminController
             ->default(function ($form) {
                 return $form->model()->password;
             });
+        $form->text('survey_name', '填表人');
         $form->text('depart', '單位');
         $form->text('serial', '樣本編號');
         $form->hidden('password_uncrypt');

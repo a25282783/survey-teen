@@ -5,6 +5,7 @@
   <form id="form" action="{{ route('page3') }}" method="POST"  onsubmit="return checkForm()">
     @csrf
     <h2>貳、初入職場尋職歷程及初次工作經驗
+      <br>
       <span class="text-danger">(請以第一次工作之經驗填寫，學生時期打工不算)</span>
     </h2>
     <div class="row">
@@ -628,56 +629,50 @@
             <span>1.計薪方式：</span>
             <div class="qa-box">
               <div class="form-check">
-                <input type="checkbox" name="B_11[]" value="1" id="B_11_v1" class="form-check-input"
-                :required="B_1!=3&&B_11.length<1"
+                <input type="radio" name="B_11" value="1" id="B_11_v1" class="form-check-input"
+                required
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v1">
                   (1)月薪制(不論出勤日數或時數，每月可以領取固定的金額，而不是指每個月發一次薪水)
                 </label>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="B_11[]" value="2" id="B_11_v2" class="form-check-input"
-                :required="B_1!=3&&B_11.length<1"
+                <input type="radio" name="B_11" value="2" id="B_11_v2" class="form-check-input"
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v2">
                   (2)日薪制(指依出勤日數計給薪水)
                 </label>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="B_11[]" value="3" id="B_11_v3" class="form-check-input"
-                :required="B_1!=3&&B_11.length<1"
+                <input type="radio" name="B_11" value="3" id="B_11_v3" class="form-check-input"
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v3">
                   (3)時薪制(指依出勤時數計給薪水)
                 </label>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="B_11[]" value="4" id="B_11_v4" class="form-check-input"
-                :required="B_1!=3&&B_11.length<1"
+                <input type="radio" name="B_11" value="4" id="B_11_v4" class="form-check-input"
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v4">
                   (4)按件計酬(依完成的件數計給薪水)
                 </label>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="B_11[]" value="5" id="B_11_v5" class="form-check-input"
-                :required="B_1!=3&&B_11.length<1"
+                <input type="radio" name="B_11" value="5" id="B_11_v5" class="form-check-input"
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v5">
                   (5)底薪加業績獎金(指除有約定固定底薪外，會再依績效或件數發給獎金)
                 </label>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="B_11[]" value="6" id="B_11_v6" class="form-check-input"
-                :required="B_1!=3&&B_11.length<1"
+                <input type="radio" name="B_11" value="6" id="B_11_v6" class="form-check-input"
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v6">
                   (6)無底薪之績效制 (指無約定固定底薪，僅依績效發給薪水或獎金)
                 </label>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="B_11[]" value="7" id="B_11_v7" class="form-check-input"
-                :required="B_1!=3&&B_11.length<1"
+                <input type="radio" name="B_11" value="7" id="B_11_v7" class="form-check-input"
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v7">
                   (7)其他(請說明)

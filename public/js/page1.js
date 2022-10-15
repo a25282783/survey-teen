@@ -137,6 +137,12 @@ $(function(){
   })
 
   function checkForm() {
+    if (app.A_4==2 && !app.A_4_1.includes(app.A_4_3) ) {
+      document.getElementById('A_4_3').scrollIntoView()
+      document.getElementById('A_4_3').focus()
+      alert('第四題的主要原因請填已勾選之選項')
+      return false;
+    }
     // final
     if ($('#form').find('input[name=save-return]').length > 0) {
       if (confirm('儲存本頁')){
