@@ -15,15 +15,15 @@
         </div>
       </div>
       <div class="form-group row">
-        <label class="col-md-2 col-form-label">公司名稱：</label>
+        <label class="col-md-2 col-form-label">公司名稱/姓名：</label>
         <div class="col-md-5">
           <input name="company" type="text" class="form-control" value="{{ auth()->user()->depart }}" readonly="readonly">
         </div>
       </div>
       <div class="form-group row">
-        <label for="name" class="col-md-2 col-form-label">填表人：</label>
+        <label for="name" class="col-md-2 col-form-label"><span class="text-danger">*</span>填表人：</label>
         <div class="col-md-5">
-          <input name="name" type="text" class="form-control" id="name" value="{{ auth()->user()->survey_name }}" readonly="readonly">
+          <input name="name" type="text" class="form-control" id="name" value="{{ auth()->user()->survey_name }}" required>
         </div>
       </div>
       <div class="form-group row">
