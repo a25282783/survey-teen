@@ -256,7 +256,7 @@
             </div>
         </div>
         <div class="col-12">
-            <h3>七、請問您在校期間是否有參加校外實習？<span class="text-danger">(學生時期打工不計入)</span></h3>
+            <h3>七、請問您在校期間是否有參與學校與合作機構辦理校外實習經驗？<span class="text-danger">(學生時期打工不計入)</span></h3>
             <div class="form-group">
             <div class="qa-box">
                 <div class="form-check">

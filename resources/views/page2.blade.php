@@ -519,13 +519,13 @@
               <label class="form-check-label" for="B_7_v2">
                 2.不是，第一份工作做了
                 <input min="0" type="number" class="input-inline"
-                :required="B_7==2"
+                :required="B_1!=3&&B_7==2"
                 :disabled="B_7!=2"
                 name="B_7_1"
                 >
                 年
                 <input min="0" max="12" type="number" class="input-inline"
-                :required="B_7==2"
+                :required="B_1!=3B_7==2"
                 :disabled="B_7!=2"
                 name="B_7_2"
                 >
@@ -630,7 +630,7 @@
             <div class="qa-box">
               <div class="form-check">
                 <input type="radio" name="B_11" value="1" id="B_11_v1" class="form-check-input"
-                required
+                :required="B_1!=3"
                 v-model="B_11" ref="B_11">
                 <label class="form-check-label" for="B_11_v1">
                   (1)月薪制(不論出勤日數或時數，每月可以領取固定的金額，而不是指每個月發一次薪水)
