@@ -525,7 +525,7 @@
                 >
                 年
                 <input min="0" max="12" type="number" class="input-inline"
-                :required="B_1!=3B_7==2"
+                :required="B_1!=3&&B_7==2"
                 :disabled="B_7!=2"
                 name="B_7_2"
                 >
