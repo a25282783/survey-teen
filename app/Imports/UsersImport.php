@@ -26,7 +26,6 @@ class UsersImport implements ToModel, WithStartRow, WithValidation, SkipsOnFailu
             'password' => bcrypt($row[1]),
             'depart' => $row[2],
             'serial' => $row[3],
-            'survey_name' => $row[4],
         ]);
     }
 

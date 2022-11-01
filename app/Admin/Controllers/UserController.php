@@ -29,8 +29,8 @@ class UserController extends AdminController
         $grid->paginate(30);
         $grid->column('name', '帳號');
         $grid->column('password_uncrypt', '密碼');
-        $grid->column('survey_name', '填表人');
-        $grid->column('depart', '單位');
+        // $grid->column('survey_name', '填表人');
+        $grid->column('depart', '公司名稱/姓名');
         $grid->column('serial', '樣本編號');
 
         // 將匯入操作加入到表格的工具條中
@@ -41,7 +41,7 @@ class UserController extends AdminController
         $grid->filter(function ($filter) {
             // 在这里添加字段过滤器
             $filter->like('name', '帳號');
-            $filter->like('depart', '單位');
+            $filter->like('depart', '公司名稱/姓名');
         });
 
         return $grid;
@@ -70,8 +70,8 @@ class UserController extends AdminController
             ->default(function ($form) {
                 return $form->model()->password;
             });
-        $form->text('survey_name', '填表人');
-        $form->text('depart', '單位');
+        // $form->text('survey_name', '填表人');
+        $form->text('depart', '公司名稱/姓名');
         $form->text('serial', '樣本編號');
         $form->hidden('password_uncrypt');
         $form->ignore(['password_confirmation']);
