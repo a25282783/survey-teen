@@ -78,9 +78,10 @@ class ResultsExport implements FromCollection, WithHeadings
             ]);
             // 整理資料 $newRes返回一維數組
             $newRes = [];
+            $text = [];
             foreach ($newArray as $k => $v) {
                 if (is_string($v)) {
-                    $newRes[$k] = $v;
+                    $text[$k] = $v;
                 } else {
                     if (is_array($v['answer'])) {
                         foreach ($v['answer'] as $k1 => $v1) {
@@ -91,7 +92,9 @@ class ResultsExport implements FromCollection, WithHeadings
                     }
                 }
             }
-            $data[] = collect($newRes)->sortKeys();
+            $text = collect($text);
+            $newRes = collect($newRes)->sortKeys();
+            $data[] = $text->merge($newRes);
         }
         return $data;
     }
